@@ -2,8 +2,7 @@ body{
     text-align: center;
     font-family: cursive;
     text-shadow: 5px 5px 5px rgb(150, 179, 3);
-    
-}
+    }
 
 #d1{
     width: 100px; /*largura*/
@@ -13,7 +12,83 @@ body{
     margin-left: auto;
     margin-rigth: auto;
     margin-top: 30px;
-    transform:rotate(30deg);
-    -ms-transform:rotate(30deg); /* IE 9 */
-    -webkit-transform:rotate(15deg); /* Safari and Chrome */
+    transform:rotate(0deg);
+    animation: animation 2s;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+
+
+}
+@keyframes animation{
+    from{box-shadow:  10px 10px 10px rgb(58, 153, 51);}
+    to{box-shadow: 10px 10px 10px rgb(176, 3, 35);} 
+}
+
+#d2{
+    width: 100px; /*largura*/
+    height: 50px; /*altura*/
+    background-color: rgb(184, 8, 114);
+    border: 3px solid rgb(rgb(176, 144, 3))
+    margin-left: auto;
+    margin-rigth: auto;
+    margin-top: 30px;
+    transform:rotate(0deg);
+    -ms-transform:rotate(0deg); /* IE 9 */
+    -webkit-transform:rotate(0deg); /* Safari e Chrome */
+    animation: animation 2s;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+
+}
+@keyframes animation{
+    from{box-shadow:  10px 10px 10px rgb(51, 139, 153);}
+    to{box-shadow: 10px 10px 10px rgb(181, 58, 5);} 
+}
+#d3{
+    width: 130px;
+    height: 70px;
+    background-color: blueviolet;
+    color: black;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 30px;
+    border-style: dotted;
+    float: none; /*deixa a posição neutra*/
+    animation: animation 2s;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+}
+@keyframes animation{
+    from{box-shadow:  10px 10px 10px rebeccapurple;}
+    to{box-shadow: 10px 10px 10px rgb(176, 173, 3);}    
+}
+#d4{
+    width: 95px;
+    height: 60px;
+    background-color: darkcyan;
+    color: rgba(52, 17, 185, 0.427);
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 30px;
+    border-style: hidden;
+    animation: animation 2s;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+}
+@keyframes animation{
+    from{box-shadow:  10px 10px 10px rebeccapurple;}
+    to{box-shadow: 10px 10px 10px rgb(176, 173, 3);}
+}
+img{
+    display: inline-block;
+    border: 2px solid #ddd;
+    border-radius: 4px;
+    padding: 5px;
+    animation: animation 2s;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+}
+@keyframes animation{
+    from{box-shadow:  10px 10px 10px rebeccapurple;}
+    to{box-shadow: 10px 10px 10px rgb(176, 173, 3);}
 }
