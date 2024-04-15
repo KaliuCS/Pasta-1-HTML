@@ -1,0 +1,12 @@
+body {
+    background-image: url(https://http2.mlstatic.com/D_NQ_NP_2X_865891-MLB46543740883_062021-F.webp);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+}
+
+h1 {
+    color: rgb(211, 184, 6);
+    font-weight: bold; 
+}
