@@ -1,40 +1,20 @@
-var box;
+var notas = [40,30,80,75,69,71,70,56,36]
 
 function setup() {
-  createCanvas(400,400)
-  box = createSprite(200,200,30,30)
+  createCanvas(1120,400);
+  for(var i=0; i<notas.length;i++){
+    if (notas[i] >= 70) {
+      console.log("Aprovado " + notas[i])
+    } 
+    else {
+        console.log("Reprovado " + notas[i])
+      
+    }
+
+  }
+  
+}
+function draw() {
+  background(150);
 
 }
-
-function draw() //Tudo que será executado continuamente
-{
-   background(30);
-   //keyIsDown verifica se a tecla está sendo pressionada e retorna
-   if (keyIsDown(RIGHT_ARROW))
-   {
-    box.position.x +=5;
-    background("red")
-   }
-   if (keyIsDown(LEFT_ARROW))
-   {
-    box.position.x -=5;
-    background("blue")
-   }
-   if (keyIsDown(UP_ARROW))
-   {
-    box.position.y -=5;
-    background("yellow")
-   }
-   if (keyIsDown(DOWN_ARROW))
-   {
-    box.position.y +=5;
-    background("green")
-   }
-
-   
-  drawSprites();
-}
-
-
-
-
